@@ -9,7 +9,7 @@ if(isset($_COOKIE['bgcolor'])){
 if(isset($_COOKIE['fontsize'])){
     $fontsize = $_COOKIE['fontsize'];
 }else{
-    $fontsize = "18px";
+    $fontsize = "18";
 }
 ?> 
 <!DOCTYPE html>
@@ -22,13 +22,7 @@ if(isset($_COOKIE['fontsize'])){
 <style>
     body{
         background-color:<?php echo $bgcolor?>;
-        font-size: <?php echo $fontsize ?>;
+        font-size: <?php echo $fontsize."px" ?>;
         color: <?php echo $color?>;
     }
 </style>
-<body>
-    <header>
-        <h1>ROCK IN RIO</h1>
-    </header>
-</body>
-</html>
